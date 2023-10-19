@@ -1,0 +1,106 @@
+/* Loader Starts Here */
+/* Loader */
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E84545;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader h1 {
+    font-size: 8vh;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 6vh;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.loader::after {
+    content: "";
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 5px solid whitesmoke;
+    border-top-color: #E84545;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 50%;
+    animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/*Loader Ends Here  */
+
+body{
+    background-color: #495E57;
+}
+
+body::before{
+    content: "";
+    height: 40rem!important;
+    width: 100vw!important;
+    background-color: #F4CE14!important;  
+}
+
+/* Utility Classes */
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.garamond {
+    font-family: 'EB Garamond', serif;
+}
+
+.font-900 {
+    font-weight: 2rem !important;
+}
+
+.font-size-2rem {
+    font-size: 1.8rem !important;
+}
+
+.font-size-1rem {
+    font-size: 1rem !important;
+}
+
+.width-9rem {
+    width: 9.3rem !important;
+}
+
+.bg-gainsboro {
+    background-color: #E5EDF3;
+
+
+}
+
+.border-gainsboro {
+    border: 2px solid #C6C6C7;
+}
+
+.bg-red {
+    background-color: #E84545 !important;
+}
+
+.bg-navy {
+    background-color: #121D24;
+}
