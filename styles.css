@@ -11,13 +11,13 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: #E84545;
+    background-color: whitesmoke;
     transition: opacity 0.75s, visibility 0.75s;
 }
 
 .loader h1 {
     font-size: 8vh;
-    color: white;
+    color: #495E57;
     font-family: "Raleway", sans-serif;
     margin-bottom: 6vh;
 }
@@ -33,7 +33,7 @@
     height: 2.5rem;
     width: 2.5rem;
     border: 5px solid whitesmoke;
-    border-top-color: #E84545;
+    border-top-color: #495E57;
     font-family: 'Roboto Slab', serif;
     border-radius: 50%;
     animation: loading 1s ease infinite;
@@ -55,12 +55,12 @@ body{
     background-color: #495E57;
 }
 
-body::before{
+/* body::before{
     content: "";
     height: 40rem!important;
     width: 100vw!important;
     background-color: #F4CE14!important;  
-}
+} */
 
 /* Utility Classes */
 .roboto {
@@ -103,4 +103,7 @@ body::before{
 
 .bg-navy {
     background-color: #121D24;
+}
+body h1{
+    color: whitesmoke;
 }
